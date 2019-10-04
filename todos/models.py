@@ -3,6 +3,6 @@ from django.db import models
 # Create your models here.
 class Todo(models.Model):
     title = models.CharField(max_length=50)
-    content = models.TextField
-    due_date = models.DateTimeField
-    author = models.TextField
+    content = models.TextField()
+    due_date = models.DateTimeField()
+    author = models.TextField()
