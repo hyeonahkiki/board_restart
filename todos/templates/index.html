@@ -3,5 +3,6 @@
 <h1>index</h1>
 {% for todo in todos %}
 <h5>{{todo.author}}/{{todo.title}}-{{todo.due_date}}</h5>
+<a href="/todos/{{todo.id}}/delete/">삭제</a>
 {% endfor %}
 {% endblock %}
