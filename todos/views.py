@@ -20,3 +20,4 @@ def create(request):
 
     todo = Todo.objects.create(author=author, title=title, content=content, due_date=due_date)
     return redirect('/todos/')
+    

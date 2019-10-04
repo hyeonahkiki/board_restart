@@ -4,5 +4,5 @@ from django.db import models
 class Todo(models.Model):
     title = models.CharField(max_length=50)
     content = models.TextField()
-    due_date = models.DateTimeField()
+    due_date = models.DateField()
     author = models.TextField()
