@@ -19,9 +19,9 @@ def create(request):
     due_date = request.POST.get('due-date')
 
     todo = Todo.objects.create(author=author, title=title, content=content, due_date=due_date)
-    return redirect('/todos/')
+    return redirect('todos:index')
 
 def delete(request, id):
     todo = Todo.objects.get(id=id)
     todo.delete()
-    return redirect('/todos/')
+    return redirect('todos:index')
